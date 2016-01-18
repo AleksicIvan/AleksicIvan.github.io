@@ -1,1 +1,139 @@
-Hello World
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="pajper" >
+        <title>LotoGenerator</title>
+        <link rel="shortcut icon" href="">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        <style>body{padding-top:50px;}.starter-template{padding:40px 15px;text-align:center;}</style>
+
+        <!--[if IE]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Loto</a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Reset</a></li>
+                </ul>
+            </div><!--.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <div class="starter-template">
+            <h1>LOTO</h1>
+            <br />
+            <h3>Klikni na dugme i dobićeš svoj slučajno izabrani loto broj!</h3>
+            <h4>Ukoliko se broj ponovi, samo klikni na dugme i ponovi izbor</h4>
+            <br />
+            <div class="btn-group" role="group" aria-label="...">
+
+                <button class="panel-button" data-panelid="#panel1" type="button" class="btn btn-default">Prvi broj</button>
+                <button class="panel-button" data-panelid="#panel2" type="button" class="btn btn-default">Drugi broj</button>
+                <button class="panel-button" data-panelid="#panel3" type="button" class="btn btn-default">Treći broj</button>
+                <button class="panel-button" data-panelid="#panel4" type="button" class="btn btn-default">Četvrti broj</button>
+                <button class="panel-button" data-panelid="#panel5" type="button" class="btn btn-default">Peti broj</button>
+                <button class="panel-button" data-panelid="#panel6" type="button" class="btn btn-default">Šesti broj</button>
+                <button class="panel-button" data-panelid="#panel7" type="button" class="btn btn-default">Sedmi broj</button>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+                <div class="col-xs-3">
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">Prvi broj</div>
+                      <div id="panel1" class="panel-body"></div>
+                    </div>
+                </div>
+
+               <div class="col-xs-3">
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">Drugi broj</div>
+                      <div id="panel2" class="panel-body"></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">Treći broj</div>
+                      <div id="panel3" class="panel-body"></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">Četvrti broj</div>
+                      <div id="panel4" class="panel-body"></div>
+                    </div>
+                </div>
+        </div>  
+        
+        <div class="row">       
+            
+                <div class="col-xs-4">
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">Peti broj</div>
+                      <div id="panel5" class="panel-body"></div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-3">
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">Šesti broj</div>
+                      <div id="panel6" class="panel-body"></div>
+                    </div>
+                </div>
+                 
+                <div class="col-xs-4">
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">Sedmi broj</div>
+                      <div id="panel7" class="panel-body"></div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+    (function(){  
+    	  
+    	  function getRandomInt(min, max) {
+    	  		var min = 1, max = 40;
+        		return Math.floor(Math.random() * (max - min)) + min;
+        	};	
+        	       	
+		          
+        $(".panel-button").on("click", function () {
+        		var bin = getRandomInt();
+        		var panelId = $(this).attr("data-panelid");          
+          	$(panelId).append().text(bin); 
+        });  
+ 
+    })();    
+    </script>    
+  </body>
+</html>
+
