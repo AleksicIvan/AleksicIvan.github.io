@@ -54,25 +54,20 @@
     }
 
     /* Main marketing message and sign up button */
-    .jumbotron {
-      text-align: center;
-      border-bottom: 1px solid #e5e5e5;
-    }
-    .jumbotron .btn {
-      font-size: 21px;
-      padding: 14px 24px;
-    }
 
-    /* Supporting marketing content */
-    .marketing {
-      margin: 40px 0;
-    }
-    .marketing p + h4 {
-      margin-top: 28px;
-    }
+    .jumbotron {
+        text-align: center;
+        padding: 0.5em 0.6em;
+        border-bottom: 1px solid #e5e5e5;
+      }
 
     /* Responsive: Portrait tablets and up */
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 500px) {
+
+      body {
+        font-size: 2em;
+      }
+
       .container {
         max-width: 730px;
       }
@@ -92,36 +87,59 @@
       .jumbotron {
         border-bottom: 0;
       }
+
+      .rezultat {
+          display: inline;
+          text-align: left;
+      }
     }
 
     .rezultatPlus {
         background-color: grey;
         display: inline;
-        font: 40px arial, sans-serif;
+        font: 1.5em arial, sans-serif;
     }
 
     .rezultat {
         display: inline;
-        font: 30px arial, sans-serif;
+        /*font: 0.8em arial, sans-serif;*/
     }
 
     .rezultatMinus {
         background-color: grey;
         display: inline;
-        font: 20px arial, sans-serif;
+        font: 1.3em arial, sans-serif;
     }
 
     #statistika {
-      text-align: left;
+        text-align: left;
+        font: 0.8em arial, sans-serif;
     }
 
     #kaoFuter {
-      font-size: 11px;
+        font-size: 0.7em;
     }
 
     .progress-bar {
-      background-color: grey;
+        background-color: grey;
     }
+
+    #naslov {
+      font: 2em arial, sans-serif;
+    }
+
+    #uvod {
+      font: 1.2em arial, sans-serif;
+    }
+
+    #srecno  {
+      font: 1.4em arial, sans-serif;
+    }
+
+    #futer {
+      font-size: 0.7em;
+    }
+
     </style>
 
         <!-- zavisne biblioteke i frameworks -->
@@ -129,7 +147,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <!-- ovde ide moj js -->
-        <script>
+  <script>
         'use strict';
 
         /**
@@ -485,7 +503,7 @@
           };
         }]);
 
-        </script>
+  </script>
 
   </head>
   <body ng-app="lotoratorApp">
@@ -499,8 +517,8 @@
          <div class="jumbotron">
              <h1 id="naslov" class="display-3">LOTO</h1>
                <br />
-               <p class="lead">Klikni na dugme i dobićeš svoju slučajno izabranu loto kombinaciju!</p>
-               <h2>Srećno!</h2>
+               <p id="uvod" class="lead">Klikni na dugme i dobićeš svoju slučajno izabranu loto kombinaciju!</p>
+               <h2 id="srecno" >Srećno!</h2>
                <hr class="m-y-2">
                <p class="lead">
                  <a id="dugmence" role="button" class="btn btn-default btn-lg" ng-click="lotoKombinacija()">Izaberi</a>
@@ -517,7 +535,7 @@
                <p class="rezultatMinus">Statistika za vašu kombinaciju *: </p>
                <hr />
                <p class="lead">
-                 <a id="dugmence1" role="button" type="button" class="btn btn-default" ng-click="statistika()">Prikaži</a>
+                 <a id="dugmence1" role="button" type="button" class="btn btn-default btn-lg" ng-click="statistika()">Prikaži</a>
                </p>
                <hr />
              <div id="statistika" class="collapse">
@@ -558,7 +576,7 @@
       </div>
     </div>
 
-    <div class="footer">
+    <div id="futer" class="footer">
       <div class="container">
         <p>Sačinio<a href="https://github.com/AleksicIvan"> Ivan Aleksić </a>od <span class="glyphicon glyphicon-heart"></span></p>
       </div>
@@ -566,5 +584,4 @@
 
 </body>
 </html>
-
 
