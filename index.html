@@ -88,9 +88,15 @@
         border-bottom: 0;
       }
 
+      .jumbotron p{
+        font: 1em arial, sans-serif;
+        border-bottom: 0;
+      }
+
       .rezultat {
           display: inline;
-          text-align: left;
+          padding: 1em;
+
       }
     }
 
@@ -102,7 +108,6 @@
 
     .rezultat {
         display: inline;
-        /*font: 0.8em arial, sans-serif;*/
     }
 
     .rezultatMinus {
@@ -121,6 +126,7 @@
     }
 
     .progress-bar {
+        font-size: 0.7em;
         background-color: grey;
     }
 
@@ -527,9 +533,9 @@
            <div class="well">
                <div class="rezultatPlus">Izabrana kombinacija glasi:</div>
            </div>
-           <div class="well">
-               <div class="well-sm rezultat" ng-repeat="broj in sviBrojevi">|{{ broj }}|</div>
-           </div>
+
+           <div class="well well-sm"> <p class="rezultat" ng-repeat="broj in sviBrojevi">({{ broj }})</p></div>
+
 
            <div class="well">
                <p class="rezultatMinus">Statistika za vašu kombinaciju *: </p>
@@ -584,4 +590,5 @@
 
 </body>
 </html>
+
 
