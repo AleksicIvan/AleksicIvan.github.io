@@ -120,6 +120,12 @@
         background-color: grey;
     }
 
+    b, strong {
+        color: #fff; 
+        font-size: 1em;
+        background-color: grey;
+    }
+
     #naslov {
       font: 2em arial, sans-serif;
     }

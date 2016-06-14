@@ -174,11 +174,6 @@ angular.module('lotoratorApp')
 	              var aa = (($scope.numOccuranceInAllComb.a / numOfAllOccurencies(allCombs)) * 100);
 	              var procA = Math.round(aa);
 	              $scope.percantageOfOccurancies.a = procA;
-	              //console.log($scope.percantageOfOccurancies.a);
-	              var a = document.getElementById('progresA');
-	              a.setAttribute('aria-valuenow', procA);
-	              a.setAttribute('style', 'min-width: 22px;' + ' ' + 'width:' + procA + '%');
-	              //console.log(procA);
 	            }
 	            calcPercentageForA();
 
@@ -186,11 +181,6 @@ angular.module('lotoratorApp')
 	              var bb = (($scope.numOccuranceInAllComb.b / numOfAllOccurencies(allCombs)) * 100);
 	              var procB = Math.round(bb);
 	              $scope.percantageOfOccurancies.b = procB;
-	              //console.log($scope.percantageOfOccurancies.b);
-	              var b = document.getElementById('progresB');
-	              b.setAttribute('aria-valuenow', procB);
-	              b.setAttribute('style', 'min-width: 22px;' + ' ' + 'width:' + procB + '%');
-	              //console.log(procB);
 	            }
 	            calcPercentageForB();
 
@@ -198,11 +188,6 @@ angular.module('lotoratorApp')
 	              var cc = (($scope.numOccuranceInAllComb.c / numOfAllOccurencies(allCombs)) * 100);
 	              var procC = Math.round(cc);
 	              $scope.percantageOfOccurancies.c = procC;
-	              //console.log($scope.percantageOfOccurancies.c);
-	              var c = document.getElementById('progresC');
-	              c.setAttribute('aria-valuenow', procC);
-	              c.setAttribute('style', 'min-width: 22px;' + ' ' + 'width:' + procC + '%');
-	              //console.log(procC);
 	            }
 	            calcPercentageForC();
 
@@ -210,11 +195,6 @@ angular.module('lotoratorApp')
 	              var dd = (($scope.numOccuranceInAllComb.d / numOfAllOccurencies(allCombs)) * 100);
 	              var procD = Math.round(dd);
 	              $scope.percantageOfOccurancies.d = procD;
-	              //console.log($scope.percantageOfOccurancies.d);
-	              var d = document.getElementById('progresD');
-	              d.setAttribute('aria-valuenow', procD);
-	              d.setAttribute('style', 'min-width: 22px;' + ' ' + 'width:' + procD + '%');
-	              //console.log(procD);
 	            }
 	            calcPercentageForD();
 
@@ -222,11 +202,6 @@ angular.module('lotoratorApp')
 	              var ee = (($scope.numOccuranceInAllComb.e / numOfAllOccurencies(allCombs)) * 100);
 	              var procE = Math.round(ee);
 	              $scope.percantageOfOccurancies.e = procE;
-	              //console.log($scope.percantageOfOccurancies.e);
-	              var e = document.getElementById('progresE');
-	              e.setAttribute('aria-valuenow', procE);
-	              e.setAttribute('style', 'min-width: 22px;' + ' ' + 'width:' + procE + '%');
-	              //console.log(procE);
 	            }
 	            calcPercentageForE();
 
@@ -234,11 +209,6 @@ angular.module('lotoratorApp')
 	              var ff = (($scope.numOccuranceInAllComb.f / numOfAllOccurencies(allCombs)) * 100);
 	              var procF = Math.round(ff);
 	              $scope.percantageOfOccurancies.f = procF;
-	              //console.log($scope.percantageOfOccurancies.f);
-	              var f = document.getElementById('progresF');
-	              f.setAttribute('aria-valuenow', procF);
-	              f.setAttribute('style', 'min-width: 22px;' + ' ' + 'width:' + procF + '%');
-	              //console.log(procF);
 	            }
 	            calcPercentageForF();
 
@@ -246,11 +216,6 @@ angular.module('lotoratorApp')
 	              var gg = (($scope.numOccuranceInAllComb.g / numOfAllOccurencies(allCombs)) * 100);
 	              var procG = Math.round(gg);
 	              $scope.percantageOfOccurancies.g = procG;
-	              //console.log($scope.percantageOfOccurancies.g);
-	              var g = document.getElementById('progresG');
-	              g.setAttribute('aria-valuenow', procG);
-	              g.setAttribute('style', 'min-width: 22px;' + ' ' + 'width:' + procG + '%');
-	              //console.log(procG);
 	            }
 	            calcPercentageForG();
 	          };
