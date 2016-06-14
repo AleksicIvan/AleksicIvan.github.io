@@ -8,7 +8,6 @@ angular.module('lotoratorApp')
 
 	            var allCombs = allComb;
 
-
 	            function numOfAllOccurencies (arr){
 	              var allNum;
 	              allNum = arr.length * 7;
@@ -35,6 +34,7 @@ angular.module('lotoratorApp')
 	                }
 	              }
 	            }
+	            allOccurenciesOfA(allCombs);
 
 	            function allOccurenciesOfB (arr) {
 	              var arrTemp;
@@ -56,6 +56,7 @@ angular.module('lotoratorApp')
 	                }
 	              }
 	            }
+	            allOccurenciesOfB(allCombs);
 
 	            function allOccurenciesOfC (arr) {
 	              var arrTemp;
@@ -77,6 +78,7 @@ angular.module('lotoratorApp')
 	                }
 	              }
 	            }
+	            allOccurenciesOfC(allCombs);
 
 	            function allOccurenciesOfD (arr) {
 	              var arrTemp;
@@ -98,6 +100,7 @@ angular.module('lotoratorApp')
 	                }
 	              }
 	            }
+	            allOccurenciesOfD(allCombs);
 
 	            function allOccurenciesOfE (arr) {
 	              var arrTemp;
@@ -119,6 +122,7 @@ angular.module('lotoratorApp')
 	                }
 	              }
 	            }
+	            allOccurenciesOfE(allCombs);
 
 	            function allOccurenciesOfF (arr) {
 	              var arrTemp;
@@ -140,6 +144,7 @@ angular.module('lotoratorApp')
 	                }
 	              }
 	            }
+	            allOccurenciesOfF(allCombs);
 
 	            function allOccurenciesOfG (arr) {
 	              var arrTemp;
@@ -160,14 +165,7 @@ angular.module('lotoratorApp')
 	                  }
 	                }
 	              }
-	            }
-
-	            allOccurenciesOfA(allCombs);
-	            allOccurenciesOfB(allCombs);
-	            allOccurenciesOfC(allCombs);
-	            allOccurenciesOfD(allCombs);
-	            allOccurenciesOfE(allCombs);
-	            allOccurenciesOfF(allCombs);
+	            }               
 	            allOccurenciesOfG(allCombs);
 
 	            function calcPercentageForA (){
@@ -220,13 +218,8 @@ angular.module('lotoratorApp')
 	            calcPercentageForG();
 	          };
 			},
-			// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
-			restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
-			// template: '',
+			restrict: 'E', 
 			templateUrl: '../templates/statistics.templ.html', 
-			// replace: true,
-			// transclude: true,
-			// compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
 			link: function($scope, iElm, iAttrs, controller) {
 				iElm.bind('click', function() {
 					var divStatistika = document.getElementById('statistika');
