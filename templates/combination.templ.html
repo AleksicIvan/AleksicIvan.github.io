@@ -1,0 +1,16 @@
+<h1 id="naslov" class="display-3">LOTO</h1>
+<br />
+<p id="uvod" class="lead">Klikni na dugme i dobićeš svoju slučajno izabranu loto kombinaciju!</p>
+<h2 id="srecno" >Srećno!</h2>
+<hr class="m-y-2">
+<p class="lead">
+  <a id="dugmence" role="button" class="btn btn-default btn-lg" ng-click="lottoCombination()">Izaberi</a>
+</p>
+<hr class="m-y-2">
+<div class="well">
+  <div class="rezultatPlus">Izabrana kombinacija glasi:</div>
+</div>
+
+<div class="well well-sm"> 
+  <p class="rezultat" ng-repeat="broj in allNums">({{ broj }})</p>
+</div>

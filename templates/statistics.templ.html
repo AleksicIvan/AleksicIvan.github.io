@@ -1,0 +1,40 @@
+<div class="well">
+    <p class="rezultatMinus">Statistika za vašu kombinaciju *: </p>
+    <hr />
+    <p class="lead">
+     <a id="dugmence1" role="button" type="button" class="btn btn-default btn-lg" ng-click="getStatistics()">Prikaži</a>
+    </p>
+    <hr />
+  <div id="statistika" class="collapse">
+      <div class="well well-sm">Broj ponavljanja prvog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.a || 0}}</div>
+        <div id="progresA" class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="" style="width:100%">{{ percantageOfOccurancies.a }}%</div>
+        </div>
+      <div class="well well-sm">Broj ponavljanja drugog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.b || 0}} </div>
+        <div id="progresB" class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="" style="width:100%">{{ percantageOfOccurancies.b }}%</div>
+        </div>
+      <div class="well well-sm">Broj ponavljanja trećeg broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.c || 0 }} </div>
+        <div id="progresC" class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="" style="width:100%">{{ percantageOfOccurancies.c }}%</div>
+        </div>
+      <div class="well well-sm">Broj ponavljanja četvrtog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.d || 0}} </div>
+        <div id="progresD" class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="" style="width:100%">{{ percantageOfOccurancies.d }}%</div>
+        </div>
+      <div class="well well-sm">Broj ponavljanja petog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.e || 0}} </div>
+        <div id="progresE" class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="" style="width:100%">{{ percantageOfOccurancies.e }}%</div>
+        </div>
+      <div class="well well-sm">Broj ponavljanja šestog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.f || 0}} </div>
+        <div id="progresF" class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="" style="width:100%">{{ percantageOfOccurancies.f }}%</div>
+        </div>
+      <div class="well well-sm">Broj ponavljanja sedmog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.g || 0}} </div>
+        <div id="progresG" class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="" style="width:100%">{{ percantageOfOccurancies.g }}%</div>
+        </div>
+      <hr />
+      <div id="kaoFuter" class="well well-sm">* Sa glavne internet stranice <a href="http://www.lutrija.rs/loto.php">Državne lutrije Srbije</a> preuzeti su podaci o izvučenim loto kombinacijama od 2011. godine.</div>
+  </div>
+</div>

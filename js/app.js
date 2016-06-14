@@ -1,3 +1,5 @@
+ 'use strict';
+ 
  var myApp = angular.module('lotoratorApp', []);
 
  myApp.service('allComb', function() {
