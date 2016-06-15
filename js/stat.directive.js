@@ -7,7 +7,7 @@ angular.module('lotoratorApp')
 				$scope.getStatistics = function(){
 
 	            var allCombs = allComb;
-
+	            
 	            function numOfAllOccurencies (arr){
 	              var allNum;
 	              allNum = arr.length * 7;
