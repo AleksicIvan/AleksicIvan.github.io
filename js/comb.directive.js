@@ -1,7 +1,7 @@
  'use strict';
 
 angular.module('lotoratorApp')
-	.directive('combination', ['allComb', function(allComb){
+	.directive('combination', function(){
 		return {
 			controller: function($scope) {
 				$scope.lottoCombination = function() {
@@ -65,6 +65,7 @@ angular.module('lotoratorApp')
 	                       rndmNumG(1,40);
 	                    }
 	                })(1,40);
+
 	            }
 			},
 			restrict: 'E',
@@ -76,4 +77,4 @@ angular.module('lotoratorApp')
 				})   
 			}
 		};
-	}]);
+	});

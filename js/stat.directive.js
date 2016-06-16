@@ -3,7 +3,7 @@
 angular.module('lotoratorApp')
 	.directive('statistics', ['allComb', function(allComb){
 		return {
-			controller: function($scope, $element, $attrs, $transclude) {
+			controller: function($scope) {
 				$scope.getStatistics = function(){
 
 	            var allCombs = allComb;
@@ -12,7 +12,7 @@ angular.module('lotoratorApp')
 	              var allNum;
 	              allNum = arr.length * 7;
 	              return allNum;
-	            };
+	            }
 
 	            function allOccurenciesOfA (arr) {
 	              var arrTemp;

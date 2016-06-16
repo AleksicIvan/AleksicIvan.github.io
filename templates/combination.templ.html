@@ -8,9 +8,9 @@
 </p>
 <hr class="m-y-2">
 <div class="well">
-  <div class="rezultatPlus">Izabrana kombinacija glasi:</div>
+  <p><h3 class="rezultatPlus">Izabrana kombinacija glasi:</h3></p>
 </div>
 
-<div class="well well-sm"> 
-  <span class="rezultat" ng-repeat="broj in allNums">({{ broj }})</span>
+<div class="well">
+  <p class="rezultat boxx" ng-repeat="(key, value) in allNums">{{ value }}</p>
 </div>
