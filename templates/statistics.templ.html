@@ -1,40 +1,62 @@
-<div class="well">
-    <p class="rezultatMinus">Statistika za vašu kombinaciju *: </p>
-    <hr />
-    <p class="lead">
-     <a id="dugmence1" role="button" type="button" class="btn btn-default btn-lg" ng-click="getStatistics()">Prikaži</a>
+<div class="containerx">
+  <md-content class="md-content-text-align" flex="grow" class="md-body-2">
+    <hr class="prikaziHR" />
+    <p>
+     <md-button id="dugmence" class="md-raised"  ng-click="getStatistics()">statistika</md-button>
     </p>
     <hr />
-  <div id="statistika" class="collapse">
-      <div class="well well-sm">Broj ponavljanja prvog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.a || 0}}</div>
-        <div id="progresA" class="progress">
-          <uib-progressbar class="progress-striped active" value="{{percantageOfOccurancies.a}}"><b>{{percantageOfOccurancies.a}}%</b></uib-progressbar>
+    <div id="statistika" class="statistika_hide">
+
+        <div class="md-whiteframe-4dp md-title num-of-occur">Broj ponavljanja prvog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.a || 0}}</div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="{{percantageOfOccurancies.a}}" aria-valuemin="0" aria-valuemax="" style="width: {{percantageOfOccurancies.a + 3.5}}%;">
+          {{percantageOfOccurancies.a}}%
+          </div>
         </div>
-      <div class="well well-sm">Broj ponavljanja drugog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.b || 0}} </div>
-        <div id="progresB" class="progress">
-            <uib-progressbar class="progress-striped active" value="{{percantageOfOccurancies.b}}"><b>{{percantageOfOccurancies.b}}%</b></uib-progressbar>
+
+        <div class="md-whiteframe-4dp md-title num-of-occur">Broj ponavljanja drugog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.b || 0}} </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="{{percantageOfOccurancies.b}}" aria-valuemin="0" aria-valuemax="" style="width: {{percantageOfOccurancies.b + 3.5}}%;">
+          {{percantageOfOccurancies.b}}%
+          </div>
+        </div>  
+
+        <div class="md-whiteframe-4dp md-title num-of-occur">Broj ponavljanja trećeg broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.c || 0 }} </div>
+        <div class="progress">
+           <div class="progress-bar" role="progressbar" aria-valuenow="{{percantageOfOccurancies.c}}" aria-valuemin="0" aria-valuemax="" style="width: {{percantageOfOccurancies.c + 3.5}}%;">
+          {{percantageOfOccurancies.c}}%
+          </div>
         </div>
-      <div class="well well-sm">Broj ponavljanja trećeg broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.c || 0 }} </div>
-        <div id="progresC" class="progress">
-          <uib-progressbar class="progress-striped active" value="{{percantageOfOccurancies.c}}"><b>{{percantageOfOccurancies.c}}%</b></uib-progressbar>
-        </div>
-      <div class="well well-sm">Broj ponavljanja četvrtog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.d || 0}} </div>
-        <div id="progresD" class="progress">
-          <uib-progressbar class="progress-striped active" value="{{percantageOfOccurancies.d}}"><b>{{percantageOfOccurancies.d}}%</b></uib-progressbar>
-        </div>
-      <div class="well well-sm">Broj ponavljanja petog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.e || 0}} </div>
-        <div id="progresE" class="progress">
-          <uib-progressbar class="progress-striped active" value="{{percantageOfOccurancies.e}}"><b>{{percantageOfOccurancies.e}}%</b></uib-progressbar>
-        </div>
-      <div class="well well-sm">Broj ponavljanja šestog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.f || 0}} </div>
-        <div id="progresF" class="progress">
-          <uib-progressbar class="progress-striped active" value="{{percantageOfOccurancies.f}}"><b>{{percantageOfOccurancies.f}}%</b></uib-progressbar>
-        </div>
-      <div class="well well-sm">Broj ponavljanja sedmog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.g || 0}} </div>
-        <div id="progresG" class="progress">
-          <uib-progressbar class="progress-striped active" value="{{percantageOfOccurancies.g}}"><b>{{percantageOfOccurancies.g}}%</b></uib-progressbar>
-        </div>
-      <hr />
-      <div id="kaoFuter" class="well well-sm">* Sa glavne internet stranice <a href="http://www.lutrija.rs/loto.php">Državne lutrije Srbije</a> preuzeti su podaci o izvučenim loto kombinacijama od 2011. godine.</div>
-  </div>
+
+        <div class="md-whiteframe-4dp md-title num-of-occur">Broj ponavljanja četvrtog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.d || 0}} </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{percantageOfOccurancies.d}}" aria-valuemin="0" aria-valuemax="" style="width: {{percantageOfOccurancies.d + 3.5}}%;">
+           {{percantageOfOccurancies.d}}%
+            </div>        
+          </div>
+
+        <div class="md-whiteframe-4dp md-title num-of-occur">Broj ponavljanja petog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.e || 0}} </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{percantageOfOccurancies.e}}" aria-valuemin="0" aria-valuemax="" style="width: {{percantageOfOccurancies.e + 3.5}}%;">
+           {{percantageOfOccurancies.e}}%
+            </div>        
+          </div>      
+
+        <div class="md-whiteframe-4dp md-title num-of-occur">Broj ponavljanja šestog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.f || 0}} </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{percantageOfOccurancies.f}}" aria-valuemin="0" aria-valuemax="" style="width: {{percantageOfOccurancies.f + 3.5}}%;">
+           {{percantageOfOccurancies.f}}%
+            </div>        
+          </div>  
+
+        <div class="md-whiteframe-4dp md-title num-of-occur">Broj ponavljanja sedmog broja u izvučenim kombinacijama je: {{ numOccuranceInAllComb.g || 0}} </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{percantageOfOccurancies.g}}" aria-valuemin="0" aria-valuemax="" style="width: {{percantageOfOccurancies.g + 3.5}}%;">
+           {{percantageOfOccurancies.g}}%
+            </div>        
+          </div> 
+
+        <hr />
+    </div>
+  </md-content>
 </div>

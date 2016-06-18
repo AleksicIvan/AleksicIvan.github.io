@@ -1,3 +1,3 @@
  'use strict';
  
- var myApp = angular.module('lotoratorApp', []);
+ var myApp = angular.module('lotoratorApp', ['ngMaterial']);
