@@ -3,7 +3,7 @@
 angular.module('lotoratorApp')
 	.directive('statistics', ['allComb', function(allComb){
 		return {
-			controller: function($scope, $element, $attrs, $transclude) {
+			controller: function($scope) {
 				$scope.getStatistics = function(){
 
 	            var allCombs = allComb;
@@ -12,12 +12,12 @@ angular.module('lotoratorApp')
 	              var allNum;
 	              allNum = arr.length * 7;
 	              return allNum;
-	            };
+	            }
 
 	            function allOccurenciesOfA (arr) {
 	              var arrTemp;
 	              var counterA = 0;
-	              var firstA = $scope.allNums.a;
+	              var firstA = $scope.lottoRndmCombo[0];
 
 	              //console.log("first broj u objektu je: " + firstA);
 	              //petlja koja ide kroz niz arr
@@ -39,7 +39,7 @@ angular.module('lotoratorApp')
 	            function allOccurenciesOfB (arr) {
 	              var arrTemp;
 	              var counterB = 0;
-	              var firstB = $scope.allNums.b;
+	              var firstB = $scope.lottoRndmCombo[1];
 
 	              //console.log("Drugi broj u objektu je: " + firstB);
 	              //petlja koja ide kroz niz arr
@@ -61,7 +61,7 @@ angular.module('lotoratorApp')
 	            function allOccurenciesOfC (arr) {
 	              var arrTemp;
 	              var counterC = 0;
-	              var firstC = $scope.allNums.c;
+	              var firstC = $scope.lottoRndmCombo[2];
 
 	              //console.log("Treci broj u objektu je: " + firstC);
 	              //petlja koja ide kroz niz arr
@@ -83,7 +83,7 @@ angular.module('lotoratorApp')
 	            function allOccurenciesOfD (arr) {
 	              var arrTemp;
 	              var counterD = 0;
-	              var firstD = $scope.allNums.d;
+	              var firstD = $scope.lottoRndmCombo[3];
 
 	              //console.log("Cetvrti broj u objektu je: " + firstD);
 	              //petlja koja ide kroz niz arr
@@ -105,7 +105,7 @@ angular.module('lotoratorApp')
 	            function allOccurenciesOfE (arr) {
 	              var arrTemp;
 	              var counterE = 0;
-	              var firstE = $scope.allNums.e;
+	              var firstE = $scope.lottoRndmCombo[4];
 
 	              //console.log("Peti broj u objektu je: " + firstE);
 	              //petlja koja ide kroz niz arr
@@ -127,7 +127,7 @@ angular.module('lotoratorApp')
 	            function allOccurenciesOfF (arr) {
 	              var arrTemp;
 	              var counterF = 0;
-	              var firstF = $scope.allNums.f;
+	              var firstF = $scope.lottoRndmCombo[5];
 
 	              //console.log("Sesti broj u objektu je: " + firstF);
 	              //petlja koja ide kroz niz arr
@@ -149,7 +149,7 @@ angular.module('lotoratorApp')
 	            function allOccurenciesOfG (arr) {
 	              var arrTemp;
 	              var counterG = 0;
-	              var firstG = $scope.allNums.g;
+	              var firstG = $scope.lottoRndmCombo[6];
 
 	              //console.log("Sedmi broj u objektu je: " + firstG);
 	              //petlja koja ide kroz niz arr

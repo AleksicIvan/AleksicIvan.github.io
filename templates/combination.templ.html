@@ -1,16 +1,18 @@
-<h1 id="naslov" class="display-3">LOTO</h1>
-<br />
-<p id="uvod" class="lead">Klikni na dugme i dobićeš svoju slučajno izabranu loto kombinaciju!</p>
-<h2 id="srecno" >Srećno!</h2>
-<hr class="m-y-2">
-<p class="lead">
-  <a id="dugmence" role="button" class="btn btn-default btn-lg" ng-click="lottoCombination()">Izaberi</a>
-</p>
-<hr class="m-y-2">
-<div class="well">
-  <div class="rezultatPlus">Izabrana kombinacija glasi:</div>
+<div class="containerx" flex>
+	<md-content flex="grow" class="md-body-2 md-content-text-align">
+		<h1 id="naslov" class="md-display-3 md-whiteframe-4dp" >LOTO</h1>
+		<br />
+		<p id="uvod" class="md-display-1">Klikni na dugme i dobićeš svoju slučajno izabranu loto kombinaciju!</p>
+		<h2 id="srecno" class="md-display-2 md-whiteframe-4dp" >Srećno!</h2>
+		<hr class="m-y-2">
+		<p class="lead">
+		  <md-button id="dugmence" class="md-raised" ng-click="lottoCombination()">Izaberi</md-button>
+		</p>
+		<hr class="prikaziHR">
+		<div>
+		  <h3 id="najava_izabrane_kombinacije" class="md-display-1 md-whiteframe-1dp">Izabrana kombinacija glasi:</h3>
+		  <h4 id="rezultatPlus" class="md-display-2 md-whiteframe-5dp" ng-repeat="number in lottoRndmCombo">{{ number }}  </h4>
+		</div>
+	</md-content>			
 </div>
-
-<div class="well well-sm"> 
-  <span class="rezultat" ng-repeat="broj in allNums">({{ broj }})</span>
-</div>
+	
